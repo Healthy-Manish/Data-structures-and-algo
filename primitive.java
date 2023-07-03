@@ -1,6 +1,3 @@
-import javax.sound.sampled.AudioFileFormat.Type;
-
-import org.w3c.dom.TypeInfo;
 
 public class primitive {
     public static void main(String[] args) {
