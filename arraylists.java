@@ -10,6 +10,7 @@ public class arraylists {
         list.add(10);
         list.add(78);
         list.add(59);
+        
         System.out.println(list);
         System.out.println(list.contains(78));//to check avaibility of item
 
