@@ -21,8 +21,8 @@ public class array01 {
             rollno[i] = input.nextInt();
             
         }
-        System.out.println(Arrays.toString(rollno));
-
+//        System.out.println(Arrays.toString(rollno));
+        System.out.println(rollno[2]);
         //if we try to acess index out of length then it will give error
     }
 

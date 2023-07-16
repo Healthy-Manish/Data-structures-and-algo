@@ -60,7 +60,8 @@ public class binary_2D {
             int rend= matrix[rstart].length-1;
 
             if(matrix[rstart][0]<= target&& target<=matrix[rstart][rend]){
-                return  binary_search(matrix[rstart], rstart,0,matrix[rstart].length,target);
+                return
+                        binary_search(matrix[rstart], rstart,0,matrix[rstart].length,target);
             }
             else if(target>matrix[rstart][rend]){
                 rstart++;
