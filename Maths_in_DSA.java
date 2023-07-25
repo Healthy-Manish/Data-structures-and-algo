@@ -19,11 +19,26 @@ public class Maths_in_DSA {
         int n = 68;
         System.out.println(isOdd(n));
 
+        //Question: find non-repeated number
+        // arr = {2,3,4,1,2,1,3, 6, 4}
+        //ans = 6  here we will xor all numbers in array
 
+        int[] arr = {2,3,3,4,2,6,4};
+        System.out.println(ans(arr));
+
+        //Question: Find i-th bit of a number
+        // 10110110 here for i = 5 we will get output as 1
 
     }
+
     static boolean isOdd(int n){
         return (n &1)==1;
     }
-
+    static int ans(int[] arr){
+        int unique = 0;
+        for (int n :arr){
+            unique^=n;
+        }
+        return unique;
+    }
 }
