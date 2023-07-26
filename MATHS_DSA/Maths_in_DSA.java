@@ -1,3 +1,5 @@
+package MATHS_DSA;
+
 public class Maths_in_DSA {
 
     /*
