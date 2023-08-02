@@ -1,3 +1,5 @@
+package sorting_algo;
+
 import java.util.Arrays;
 
 public class cyclic_sort {
@@ -22,4 +24,6 @@ public class cyclic_sort {
         arr[num1] = arr[num2];
         arr[num2] = temp;
     }
+
+
 }
