@@ -1,3 +1,5 @@
+package recursion;
+
 public class string_recursion {
     public static void main(String[] args) {
             String up = "baccad";
