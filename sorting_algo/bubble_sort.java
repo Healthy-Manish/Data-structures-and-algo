@@ -13,6 +13,10 @@ public class bubble_sort {
          bubble(arr);
         System.out.println(Arrays.toString(arr));
     }
+//    space complexity of this algo is constant i.e no extra space is required
+    //time complexity:
+    //Best case :  O(N)
+    //Worst case : O(N^2)
     static void bubble(int[]arr){
         boolean swapp;
         for (int i = 0; i <arr.length ; i++) {

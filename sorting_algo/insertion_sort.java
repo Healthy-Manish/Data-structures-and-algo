@@ -8,6 +8,9 @@ public class insertion_sort {
         insertion(arr);
         System.out.println(Arrays.toString(arr));
     }
+//    best case time = O(N^2)
+//    worst case time = O(N^2)
+
     static void insertion(int[]arr){
         for (int i = 0; i <arr.length-1 ; i++) {
             int j = i+1;
