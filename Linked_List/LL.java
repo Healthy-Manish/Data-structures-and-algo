@@ -1,6 +1,5 @@
 package Linked_List;
 
-import org.w3c.dom.traversal.NodeIterator;
 
 public class LL {
 
@@ -49,6 +48,19 @@ public class LL {
         Node node = new Node(val, temp.next);
         temp.next = node;
         size++;
+    }
+//    inserting via recursion\
+    public void insertRec(int val, int index){
+        head = insertRec(val, index,head);
+    }
+    private Node insertRec(int val, int index, Node node){
+        if (index==0){
+            Node temp = new Node(val, node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(val,index--,node.next);
+        return node;
     }
     public void display(){
         Node temp = head;
