@@ -278,6 +278,7 @@ public class ListNode {
 
         return head;
     }
+
     public static void main(String[] args) {
 //        practice LL  = new practice();
 //        LL.insertLast(1);

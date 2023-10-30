@@ -104,6 +104,32 @@ public class mergeSort {
         }
     }
 
+    public ListNode rotateRight(ListNode head, int k) {
+        if(head==null || k == 0||head.next == null)return head;
+        ListNode l = head;
+        int length =1;
+        while (l.next!=null){
+            l = l.next;
+            length++;
+        }
+        k = k%length;
+        while(k >0){
+            ListNode h = head;
+            ListNode secondlast = head;
+            ListNode last = head.next;
+            while(last!=null && last.next!=null){
+                secondlast = secondlast.next;
+                last = last.next;
+            }
+            head = last;
+            secondlast.next = null;
+            head.next = h;
+
+
+            k--;
+        }
+        return head;
+    }
     class ListNode {
 
 
