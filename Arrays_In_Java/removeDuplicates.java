@@ -1,6 +1,5 @@
-package Arrays;
+package Arrays_In_Java;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
