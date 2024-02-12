@@ -3,6 +3,7 @@ package Binary_Search;
 import java.util.Arrays;
 
 public class Aggressive_cows {
+//    https://www.codingninjas.com/studio/problems/aggressive-cows_1082559?count=25&page=1&search=&sort_entity=order&sort_order=ASC
     static int agrresive(int[]arr,int cows){
         Arrays.sort(arr);
         int low = 1;
