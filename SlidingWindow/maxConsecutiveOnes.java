@@ -30,11 +30,25 @@ public class maxConsecutiveOnes {
         }
         return len;
     }
+    static int longestONes2(int[] nums, int k) {
+        int l = 0, r = 0, len = 0, zeroes = 0;
+        while (r < nums.length) {
+            if (nums[r] == 0) zeroes++;
+
+            if (zeroes > k) {
+                if (nums[l] == 0) zeroes--;
+                l++;
+            }
+            if(zeroes<=k)len = Math.max(len, r - l + 1);
+            r++;
+        }
+        return len;
+    }
 
     public static void main(String[] args) {
-            int[]nums = {1,1,1,0,0,0,1,1,1,1,0};
+            int[]nums = {1,1,1,0,0,0,1,1,1,1,0,1,0,0};
             int k  =2;
-            int len= longestONes(nums,k);
+            int len= longestONes2(nums,k);
         System.out.println(len);
     }
 
