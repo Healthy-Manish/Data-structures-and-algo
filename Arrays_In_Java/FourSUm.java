@@ -57,7 +57,7 @@ static List<List<Integer>>optimal(int[]arr,int target){
 }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,-1,-2,2,0,-1};
-        System.out.println(optimal(arr,0));
+        int[] arr = {1,1,1,0};
+        System.out.println(optimal(arr,4));
     }
 }
