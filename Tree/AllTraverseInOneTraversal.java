@@ -12,9 +12,9 @@ import java.util.*;
         }
     }
      class Pair{
-        TreeNode node;
+        Node node;
         int num;
-        Pair(TreeNode _node,int _num){
+        Pair(Node _node, int _num){
             num = _num;
             node = _node;
         }
@@ -23,7 +23,7 @@ import java.util.*;
 public class AllTraverseInOneTraversal {
 
 
-        public static void allTraversal(TreeNode root, List<Integer> pre, List<Integer> in, List<Integer> post) {
+        public static void allTraversal(Node root, List<Integer> pre, List<Integer> in, List<Integer> post) {
             Stack<Pair> st = new Stack<>();
             st.push(new Pair(root, 1));
 
@@ -55,13 +55,13 @@ public class AllTraverseInOneTraversal {
         }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.left.left = new TreeNode(4);
-        root.left.right = new TreeNode(5);
-        root.right = new TreeNode(3);
-        root.right.left = new TreeNode(6);
-        root.right.right = new TreeNode(7);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.right = new Node(3);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
 
         List < Integer > pre = new ArrayList < > ();
         List < Integer > in = new ArrayList < > ();
