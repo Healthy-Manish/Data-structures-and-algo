@@ -1,10 +1,10 @@
 package Tree;
 
 public class Balanced_Binary_Tree {
-    static boolean balance_binary(TreeNode root){
+    static boolean balance_binary(Node root){
     return dfsHeight(root)!=-1;
     }
-    static int dfsHeight(TreeNode root){
+    static int dfsHeight(Node root){
         if (root == null)return 0;
         int leftHeight = dfsHeight(root.left);
         if (leftHeight == -1)return -1;
